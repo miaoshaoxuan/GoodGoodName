@@ -193,7 +193,7 @@ def calSelection(name_list, is_skip_tested=False):
             continue
         utils.getScore(name)
         # 按照正常用户的速度来访问，避免请求太快被封掉了
-        time.sleep(random.randint(4, 6))
+        # time.sleep(random.randint(4, 6))
 
 
 def getWriteNumDict():

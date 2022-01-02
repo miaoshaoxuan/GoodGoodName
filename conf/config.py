@@ -1,11 +1,11 @@
 # 强烈建议修改
-LAST_NAME = '廖'  # 姓氏
-SEX = '女'  # 孩子性别，男 或者 女
-year = 2018  # 出生的时间：年
-month = 8  # 出生的时间：月
-date = 19  # 出生的时间：日
-hour = 18  # 出生的时间：小时
-minute = 25  # 出生的时间： 分钟
+LAST_NAME = '苗'  # 姓氏
+SEX = '男'  # 孩子性别，男 或者 女
+year = 2022  # 出生的时间：年
+month = 1  # 出生的时间：月
+date = 1  # 出生的时间：日
+hour = 10  # 出生的时间：小时
+minute = 17  # 出生的时间： 分钟
 
 # 选择性修改
 MIN_SINGLE_NUM = 2  # 单个字最少笔画过滤
@@ -18,7 +18,7 @@ debug = False
 my_write_num_list = [(7, 10)]  # 经过第一轮测试后笔画的结果， 自己记录下来
 true_request = True  # 真实请求测试
 # 名字固定要的字
-fix_write_word = '宸'
+fix_write_word = ''
 SELECTED_SANCAI = ['大吉', '中吉']  # 三才中，如果为None就不特意选最好的
 
 # 首先在http://www.qimingzi.net/ 网站提交基本信息，点击开始起名，F12查看请求信息把Cookie复制下来

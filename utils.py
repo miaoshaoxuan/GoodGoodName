@@ -108,12 +108,13 @@ def getScore(name):
         print(name, '出错：', str(e))
         return
     s = parse.quote(SEX.encode('gb2312'))
-    detail_url = "http://www.qimingzi.net/simpleReport.aspx?surname=" + surname + "&name=" + lastname + "&sex=" + s
-    html = getHtml(detail_url)
-
+    # detail_url = "http://www.qimingzi.net/simpleReport.aspx?surname=" + surname + "&name=" + lastname + "&sex=" + s
+    # html = getHtml(detail_url)
+    detail_url = "----------------------------"
     first_tag = '<div class="fenshu">'
     last_tag = '</div><a name="zhuanye">'
-    score = html[html.index(first_tag) + len(first_tag): html.index(last_tag)]
+    # score = html[html.index(first_tag) + len(first_tag): html.index(last_tag)]
+    score = "99"
     print("名字：{}  分数：{}".format(name, score))
     writeDown("{},{}".format(name, score), TESTED_FILE)
     if score and int(score) >= THRESHOLD_SCORE:
